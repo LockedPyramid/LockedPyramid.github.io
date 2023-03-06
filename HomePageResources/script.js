@@ -10,7 +10,6 @@ function GoPlace(_Location){
         _button.style.display = "flex"
         _button.style.marginTop = "0vh"
         _button.style.backgroundColor = "rgb(255, 255, 255)"
-        _button.style.marginTop = "00vh"
         setTimeout(function(){
             _button.style.marginTop = "75vh"
         },100);
@@ -27,6 +26,8 @@ function GoPlace(_Location){
         setTimeout(function(){
             _button.style.transform = "scale(1)"
             document.getElementById("Home").display = ""
+            _button.style.display = "none"
+            _button.style.marginTop = "0vh"
         }, 801)
 }
 
