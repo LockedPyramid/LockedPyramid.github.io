@@ -17,4 +17,9 @@ function CloseAnimation() {
     setTimeout(function(){
         window.location.href = "/index.html"
     },1500);
+    setTimeout(function(){
+        _button.style.backgroundColor = "rgb(13, 17, 23)"
+        _button.style.marginTop = "25vh"
+        _button.style.transform = "scale(100)"
+    },1501);
  }
