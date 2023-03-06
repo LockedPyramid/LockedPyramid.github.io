@@ -1,0 +1,178 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+bold{
+    color: aqua;
+}
+
+body{
+    background-color: rgb(13, 17, 23);
+}
+
+
+
+
+/* Navigation at the top of the screen */
+nav{
+    color: rgb(255, 245, 245);
+    display: inline-block;
+    background-color: rgb(13, 17, 23);
+    width: 100%;
+    margin: auto;
+    box-shadow: 4px 5px 100px rgb(255, 0, 0);
+}
+
+
+@media (max-width: 576px) {
+    
+    .NavButtonsSmall{
+    width:100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Hide the larger nav */
+  .NavButtonsLarge{
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+    .NavButtonsLarge{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    }
+    
+    /* Hide the smaller nav */
+  .NavButtonsSmall{
+    display: none;
+  }
+}
+
+/* Large screen nav */
+.NavButtonLarge{
+    background-color: rgb(13, 17, 23);
+    cursor: pointer;
+    color: aliceblue;
+
+    border-radius: 0%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(13, 17, 23);
+    border-bottom-color:rgb(255, 255, 255);
+    user-select: none;
+}
+
+.NavButtonLarge:hover{
+    transform: scale(1.1); 
+    transition: all .2s ease-in-out; 
+}
+
+.NavButtonLarge:active{
+    color: aqua;
+    transform: scale(0.9);
+}
+
+.NavButtonSmall:active{
+    color: aqua;
+    transform: scale(0.9);
+}
+
+
+/* Small screen nav */
+.NavButtonSmall{
+    background-color: rgb(13, 17, 23);
+    cursor: pointer;
+    color: aliceblue;
+
+    border-radius: 0%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(13, 17, 23);
+    border-bottom-color:rgb(255, 255, 255);
+    user-select: none;
+}
+
+.NavButtonSmall:hover{
+    transform: scale(1.1); 
+    transition: all .2s ease-in-out; 
+}
+
+/* Home title screen */
+.HomeTitle{
+    color: whitesmoke;
+    text-align: center;
+    user-select: none;
+    position: relative;
+}
+
+.HomeTitleSmall{
+    color: rgb(169, 169, 169);
+    text-align: center;
+    user-select: none;
+    padding-top: 50px;
+    position: absolute;
+}
+
+.Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.Home{
+    height: 100%;
+    display: flexbox;
+    opacity: 100%;
+}
+
+.HomeBackground{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 5%;
+    
+}
+
+.AboutLabel{
+    color: darkgoldenrod;
+    padding: 5%;
+    text-align: center;
+}
+
+.AboutText{
+    color: azure;
+    text-align: center;
+}
+
+.accordion{
+    margin-top: 25vh;
+}
+
+
+.AccessText{
+    color: darkgoldenrod;
+    padding: 5%;
+    text-align: center;
+}
+
+AnimationBlob{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.AnimationBlob{
+    margin-top: 0%;
+    border-radius: 100%;
+    border-style: solid;
+    border-width:5px ;
+    background-color: aliceblue;
+    height: 50px;
+    width: 50px;
+    transition: all 0.5s ease-in-out; 
+    position: absolute;
+    display: none;
+}

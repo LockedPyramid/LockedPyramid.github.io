@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- Boot Strap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/HomePageResources/style.css">
+    
+</head>
+
+<body>
+
+  <AnimationBlob>
+    <div class="AnimationBlob" id="AnimationBlob"></div>
+  </AnimationBlob>
+  <div class="Home" id="Home">
+
+    <nav id="Nav">
+      <div class="container text-center NavButtonsSmall">
+        <div class="row">
+          <div class="col">
+            <button type="button" class=" NavButtonSmall" onmouseup="GoToABout()">About</button>
+          </div>
+          <div class="col">
+            <button type="button" class=" NavButtonSmall" onmouseup="GoPlace('/underconstruction.html')">Learn</button>
+          </div>
+          <div class="col">
+            <button type="button" class=" NavButtonSmall" onmouseup="GoPlace('/underconstruction.html')">Products</button>
+          </div>
+          <div class="col">
+            <button type="button" class=" NavButtonSmall" onmouseup="GoConstruction('/underconstruction.html')">Access</button>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center NavButtonsLarge">
+        <div class="row">
+          <div class="col">
+            <button type="button" class=" NavButtonLarge" onmouseup="GoToABout('/underconstruction.html')">About</button>
+          </div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col">
+            <button type="button" class=" NavButtonLarge" onmouseup="GoPlace('/underconstruction.html')">Learn</button>
+          </div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col">
+            <button type="button" class=" NavButtonLarge" onmouseup="GoPlace('/underconstruction.html')">Products</button>
+          </div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col">
+            <button type="button" class=" NavButtonLarge" onmouseup="GoPlace('/underconstruction.html')">Access</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Title page -->
+    <div class="Title" >
+      <h1 class="HomeTitle" id="Title">Locked Pyrâmid </h1>
+      <p class="HomeTitleSmall" id="TitleSmall"><br><br> this webpage is under development </p>
+    </div>
+      
+
+    <!-- About -->
+
+    
+    <h2 class="AboutLabel">About</h2>
+    <p class="AboutText">Place holder</p>
+    <div class="accordion accordion-flush" id="AboutPage" data-bs-theme="dark">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            What do we mean by "House"?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"> <Bold>House:</Bold> "<bold>A building in which something is sheltered or stored</bold>" <a href="https://www.merriam-webster.com/dictionary/house">merriam-webster</a>  <br>
+            House in this context is a place that stores programs, code plugins and soon tutorials, all under one roof.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            This is a development preview.
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, dolore porro animi sint modi, earum nemo cum enim vitae quas explicabo adipisci velit culpa quidem voluptatibus veritatis tempora libero. Enim. </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fugit maiores laboriosam odio ducimus odit autem sed? Temporibus odit animi soluta voluptates. Delectus tenetur perspiciatis esse nam maxime officiis itaque?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi architecto, id saepe similique numquam obcaecati dolor a libero, voluptate sint alias natus veritatis, in error omnis suscipit molestias odio corrupti.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="/HomePageResources/script.js"></script>
