@@ -1,4 +1,4 @@
-
+console.log(document.cookie)
 
 function CloseAnimation() { 
     var _button = document.getElementById("BackButton")

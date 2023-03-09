@@ -26,32 +26,15 @@ nav{
 
 @media (max-width: 576px) {
     
-    .NavButtonsSmall{
-    width:100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  /* Hide the larger nav */
-  .NavButtonsLarge{
-    display: none;
-  }
-}
-@media (min-width: 576px) {
-    .NavButtonsLarge{
-    width:100%;
-    display: flex;
-    justify-content: center;
+    .navrow:nth-child(1) {
+        border-color: aqua;
     }
-    
-    /* Hide the smaller nav */
-  .NavButtonsSmall{
-    display: none;
-  }
+
 }
+
 
 /* Large screen nav */
-.NavButtonLarge{
+.NavButton{
     background-color: rgb(13, 17, 23);
     cursor: pointer;
     color: aliceblue;
@@ -64,40 +47,20 @@ nav{
     user-select: none;
 }
 
-.NavButtonLarge:hover{
+.navrow .col:nth-child(2n) button{
+    border-bottom-color: rgb(60, 205, 252);
+}
+
+.NavButton:hover{
     transform: scale(1.1); 
     transition: all .2s ease-in-out; 
 }
 
-.NavButtonLarge:active{
+.NavButton:active{
     color: aqua;
     transform: scale(0.9);
 }
 
-.NavButtonSmall:active{
-    color: aqua;
-    transform: scale(0.9);
-}
-
-
-/* Small screen nav */
-.NavButtonSmall{
-    background-color: rgb(13, 17, 23);
-    cursor: pointer;
-    color: aliceblue;
-
-    border-radius: 0%;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgb(13, 17, 23);
-    border-bottom-color:rgb(255, 255, 255);
-    user-select: none;
-}
-
-.NavButtonSmall:hover{
-    transform: scale(1.1); 
-    transition: all .2s ease-in-out; 
-}
 
 /* Home title screen */
 .HomeTitle{
@@ -176,3 +139,5 @@ AnimationBlob{
     position: absolute;
     display: none;
 }
+
+

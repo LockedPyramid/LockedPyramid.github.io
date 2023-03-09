@@ -22,41 +22,19 @@
   <div class="Home" id="Home">
 
     <nav id="Nav">
-      <div class="container text-center NavButtonsSmall">
-        <div class="row">
+      <div class="container text-center NavButtons">
+        <div class="row navrow">
           <div class="col">
-            <button type="button" class=" NavButtonSmall" onmouseup="GoToABout()">About</button>
+            <button type="button" class=" NavButton" data-url="/#About" data-animation="false">About</button>
           </div>
           <div class="col">
-            <button type="button" class=" NavButtonSmall" onmouseup="GoPlace('/UnderConstruction.html')">Learn</button>
+            <button type="button" class=" NavButton" data-url="/404.html">Learn</button>
           </div>
           <div class="col">
-            <button type="button" class=" NavButtonSmall" onmouseup="GoPlace('/UnderConstruction.html')">Products</button>
+            <button type="button" class=" NavButton" data-url="/404.html">Products</button>
           </div>
           <div class="col">
-            <button type="button" class=" NavButtonSmall" onmouseup="GoConstruction('/UnderConstruction.html')">Access</button>
-          </div>
-        </div>
-      </div>
-      <div class="container text-center NavButtonsLarge">
-        <div class="row">
-          <div class="col">
-            <button type="button" class=" NavButtonLarge" onmouseup="GoToABout('/UnderConstruction.html')">About</button>
-          </div>
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col">
-            <button type="button" class=" NavButtonLarge" onmouseup="GoPlace('/UnderConstruction.html')">Learn</button>
-          </div>
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col">
-            <button type="button" class=" NavButtonLarge" onmouseup="GoPlace('/UnderConstruction.html')">Products</button>
-          </div>
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col">
-            <button type="button" class=" NavButtonLarge" onmouseup="GoPlace('/UnderConstruction.html')">Access</button>
+            <button type="button" class=" NavButton" data-url="/ToggleAccsesability.html" data-animation="false">Access</button>
           </div>
         </div>
       </div>
@@ -64,16 +42,15 @@
 
     <!-- Title page -->
     <div class="Title" >
-      <h1 class="HomeTitle" id="Title">Locked Pyrâmid </h1>
+      <h1 class="HomeTitle" id="Title" data-value="Locked"> Locked</h1>
+      <h1 class="HomeTitle" id="Title2"> &nbsp Pyrâmid </h1>
       <p class="HomeTitleSmall" id="TitleSmall"><br><br> this webpage is under development </p>
     </div>
-      
-
     <!-- About -->
 
     
     <h2 class="AboutLabel">About</h2>
-    <p class="AboutText">Place holder</p>
+    <p class="AboutText" id="About">Place holder</p>
     <div class="accordion accordion-flush" id="AboutPage" data-bs-theme="dark">
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingOne">
