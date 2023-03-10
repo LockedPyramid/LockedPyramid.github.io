@@ -5,30 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="/PricingResources/style.css">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
 </head>
 <body>
     <h1>Pricing</h1>
     <div class="container text-center">
         <div class="row">
           <div class="col">
-            <h2>FREE</h2> <br>
+            <h2 data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="FREE for life">FREE</h2> <br>
             - Unlimited tutorials <br>
             - Unlimited applications <br>
             - 2 Closed source applications
           </div>
           <div class="col">
-            <h2>$2/month</h2> <br>
-            <- everything in FREE <br>
+            <h2 data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="$2 USD a month">$2/month</h2> <br>
+            <span data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right"><- everything in FREE </span> <br>
             - No ads<br>
             - 75% goes to Saint Jude <br>
             - 25% goes to upkeep of this website
           </div>
            <div class="col">
-            <h2>$13 /year</h2> <br>
+            <h2 data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="13 USD a year">$13 /year</h2> <br>
             <- everything in FREE <br>
             - No ads <br>
             - Tutorial request <br>
@@ -36,5 +49,13 @@
           </div>
         </div>
       </div>
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">
+        Tooltip on right
+      </button>      
 </body>
+<script>
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+</script>
 </html>
