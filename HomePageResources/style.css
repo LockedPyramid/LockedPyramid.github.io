@@ -24,13 +24,6 @@ nav{
 }
 
 
-@media (max-width: 576px) {
-    
-    .navrow:nth-child(1) {
-        border-color: aqua;
-    }
-
-}
 
 
 /* Large screen nav */
@@ -45,10 +38,6 @@ nav{
     border-color: rgb(13, 17, 23);
     border-bottom-color:rgb(255, 255, 255);
     user-select: none;
-}
-
-.navrow .col:nth-child(2n) button{
-    border-bottom-color: rgb(60, 205, 252);
 }
 
 .NavButton:hover{
