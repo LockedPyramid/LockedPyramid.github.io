@@ -9,3 +9,11 @@ body {
     margin: 25px;
     height: 100%;
 }
+
+.card{
+    transition-duration: 0.1s;
+}
+.card:hover {
+    
+    transform: scale(101%);
+  }
