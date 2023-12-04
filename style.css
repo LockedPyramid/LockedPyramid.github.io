@@ -17,3 +17,8 @@ body {
     
     transform: scale(101%);
   }
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
